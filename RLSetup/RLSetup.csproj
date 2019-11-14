@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<MonoGameContentReference Include="Content.mgcb" />
+	</ItemGroup>
+
+  	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems> 
+		<TargetFramework>netcoreapp3.0</TargetFramework>
+		<PublishTrimmed>true</PublishTrimmed>
+		<PublishReadyToRun>true</PublishReadyToRun>  
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	</PropertyGroup>
+	
+	<ItemGroup>	
+		<Reference Include="DesperateDevs.Utils">
+			<HintPath>..\Libraries\DesperateDevs\DesperateDevs.Utils.dll</HintPath>
+		</Reference>
+		<Reference Include="Entitas.CodeGeneration.Attributes">
+			<HintPath>..\Libraries\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
+		</Reference>
+		<Reference Include="Entitas">
+			<HintPath>..\Libraries\Entitas\Entitas.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.4" />
+		<PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.7.0.7" />
+		<PackageReference Include="SadConsole" Version="8.9.1" />
+	</ItemGroup>
+	
+	<ItemGroup>
+        <Compile Include="Assets\Generated\**\*" />
+        <Compile Include="Assets\Sources\**\*" />
+    </ItemGroup>
+
+</Project>
