@@ -2,3 +2,6 @@ Libraries
 RLSetup/Assets/Generated
 Generator/Jenny
 *.userproperties
+**/obj
+**/bin
+**/.idea

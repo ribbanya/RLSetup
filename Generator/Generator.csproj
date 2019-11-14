@@ -6,9 +6,6 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Csharp.targets"/>
   <ItemGroup>
-        <Reference Include="DesperateDevs.Utils.dll">
-            <HintPath>..\Libraries\DesperateDevs\DesperateDevs.Utils.dll</HintPath>
-        </Reference>
         <Reference Include="Entitas.CodeGeneration.Attributes">
             <HintPath>..\Libraries\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
         </Reference>
@@ -17,19 +14,4 @@
         </Reference>
         <Compile Include="..\RLSetup\Assets\**\*.cs" />
     </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\RLSetup\Assets\Generated\Game\Components\GameDebugMessageComponent.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Game\GameComponentsLookup.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\UI\UIComponentsLookup.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Game\GameAttribute.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\UI\UIAttribute.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Game\GameContext.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\UI\UIContext.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Game\GameMatcher.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\UI\UIMatcher.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Contexts.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Game\GameEntity.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\UI\UIEntity.cs" />
-    <Compile Include="..\RLSetup\Assets\Generated\Feature.cs" />
-  </ItemGroup>
 </Project>
